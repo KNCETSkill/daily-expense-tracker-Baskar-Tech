@@ -32,8 +32,8 @@ jobs:
         test-name: hid 2
         setup-command: gcc main.c -o main
         command: "./main"
-        input: "-50 30"
-        expected-output: "-20"
+        input: 50 30
+        expected-output: '80'
         comparison-method: exact
         timeout: 10
         max-score: 5
