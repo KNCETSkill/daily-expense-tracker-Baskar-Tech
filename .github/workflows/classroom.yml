@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: hid 1
-        setup-command: ''
+        setup-command: gcc main.c -o main
         command: "./main"
         input: 10 20
         expected-output: '30'
@@ -30,7 +30,7 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: hid 2
-        setup-command: ''
+        setup-command: gcc main.c -o main
         command: "./main"
         input: "-50 30"
         expected-output: "-20"
